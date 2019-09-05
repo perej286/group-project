@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unit 2 Group Assignment</title>
+	
+    <script type="text/javascript">
+
+	// Addition Function
+      function addition(userInput1,userInput2) {
+        var output = 20;
+		output = userInput1 + userInput2;
+		//alert(output)
+		alert((userInput1 + " + " + userInput2 + " = " + output));
+      };
+	// Subtraction Function
+	  function subtract(userInput1,userInput2) {
+        var output = 20;
+		output = userInput1 - userInput2;
+		//alert(output)
+		alert((userInput1 + " - " + userInput2 + " = " + output));
+      };
+	// Multiplication Function
+	  function multiply(userInput1,userInput2) {
+        var output = 20;
+		output = userInput1 * userInput2;
+		//alert(output)
+		alert((userInput1 + " * " + userInput2 + " = " + output));
+      };
+	// Division Function
+	  function division(userInput1,userInput2) {
+        var output = 20;
+		output = userInput1 / userInput2;
+		//alert(output)
+		alert((userInput1 + " / " + userInput2 + " = " + output));
+      };
+    </script>
+  </head>
+  <body>
+    <h2>CIW JavaScript Specialist</h2>
+    <script type="text/javascript">
+	var userInput1 = Number(prompt('First Number'));
+	var userInput2 = Number(prompt('Second Number'));
+    // addition(userInput1,userInput2);
+    </script>
+  </body>
+</html>
