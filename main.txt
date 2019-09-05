@@ -1,0 +1,36 @@
+function firstNumber() {
+  let num1 = parseFloat(prompt('First number '));
+  return num1;
+}
+function secondNumber() {
+  let num2 = parseFloat(prompt('Second number '));
+  return num2;
+}
+
+function add() {
+  let num1 = firstNumber();
+  let num2 = secondNumber();
+  
+  alert(num1 + ' + ' + num2 + ' = ' + (num1 + num2));
+}
+
+function subtract() {
+  let num1 = firstNumber();
+  let num2 = secondNumber();
+
+  alert(num1 + ' - ' + num2 + ' = ' + (num1 - num2));
+}
+
+function multiply() {
+  let num1 = firstNumber();
+  let num2 = secondNumber();
+
+  alert(num1 + ' * ' + num2 + ' = ' + (num1 * num2));
+}
+
+function divide() {
+  let num1 = firstNumber();
+  let num2 = secondNumber();
+
+  alert(num1 + ' / ' + num2 + ' = ' + (num1 / num2));
+}
