@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+	  
+  <meta name="description" content="CTS2852C - Group Project 1">
+  <meta name="date" content="2019-09-08">
+  <meta name="author" content="Juan Perez, James Cook, Brian Jeffries, Cathrine Bien-Aime, Lars Chellberg, Tianna Ferguson">
+  <meta name="url" content="http://www.websiteaddrress.com">
+  
+      <style>*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+          
+          body{
+            background-color: #77f095;
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+          }
+          
+          .container{
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1140px;
+          }
+          
+          .title1 {
+            padding: 20px 0;
+          }
+          
+          .btn {
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+			font-weight: bold;
+            margin-right: 12px;
+            margin-bottom: 10px;
+            cursor: pointer;
+          }
+          
+          .red {
+            background: #cd2e18;
+            color: #fff;
+          }
+          
+          .yellow {
+            background-color: #ead02a;
+            color: #fff;
+          }
+          
+          .blue {
+            background: #337aff;
+            color: #fff;
+          }
+          
+          .green {
+            background: #14c80c;
+            color: #fff;
+          }
+          
+          
+		</style>
+	
+    <meta charset="utf-8">
+    <title>Unit 2 Group Assignment</title>
+	
+	<script type="text/javascript">
+
+		function numbers(operation) {
+		
+			var userInput1 = ''
+			var userInput2 = ''
+			var output = 0;
+			
+			userInput1 = prompt('First Number');
+			while (userInput1 === '' || isNaN(userInput1)) {
+				if (userInput1 === '' ) {
+					userInput1 = prompt('Enter your first number.');
+				}
+				if (isNaN(userInput1)) {
+					userInput1 = prompt('Invalid first value. Enter a valid number.');
+				}
+			}
+
+			userInput2 = prompt('Second Number');
+			while (userInput2 === '' || isNaN(userInput2)) {
+				if (userInput2 === '' ) {
+					userInput2 = prompt('Enter your second number.');
+				}
+				if (isNaN(userInput2)) {
+					userInput2 = prompt('Invalid second value. Enter a valid number.');
+				}
+			}
+			
+			userInput1 = Number(userInput1)
+			userInput2 = Number(userInput2)
+			switch(operation) {
+				case "add":
+					output = userInput1 + userInput2;
+					alert((userInput1 + " + " + userInput2 + " = " + output));
+					break;
+				case "subtract":
+					output = userInput1 - userInput2;
+					
+					alert((userInput1 + " - " + userInput2 + " = " + output));
+					break;			
+				case "multiply":
+					output = userInput1 * userInput2;
+					
+					alert((userInput1 + " * " + userInput2 + " = " + output));
+					break;
+				case "divide":
+					output = userInput1 / userInput2;
+					
+					alert((userInput1 + " / " + userInput2 + " = " + output));
+					break;
+				default:
+					alert(("Uh oh, something went wrong! Variable dump:\nOperator: " + operation + "\nFirst operands: " + userInput1 + "\nSecond operand: " + userInput2 + ""));
+			}
+		};
+
+	</script>
+  </head>
+  <body>
+    <h2 class="title1">Unit 2 Assignment</h2>
+
+    <div class="container">
+            <!-- Buttons -->
+            <button class="btn red" onclick="numbers('add')">Add</button>
+            <button class="btn yellow" onclick="numbers('subtract')">Subtract</button>
+            <button class="btn blue"  onclick=" numbers('multiply')">Multiply</button>
+            <button class="btn green" onclick="numbers('divide')">Divide</button>
+			<!-- End Buttons -->
+    </div>
+
+  </body>
+</html>
